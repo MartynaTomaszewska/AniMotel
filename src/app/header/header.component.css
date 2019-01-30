@@ -1,0 +1,179 @@
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 140px;
+  z-index: 1001;
+  transition: all 0.5s ease-in-out;
+  box-shadow: none;
+}
+
+/*#header.header--opaque {
+height: 60px;
+}*/
+
+#header__nav-wrapper {
+display: flex;
+justify-content: space-between;
+position: relative;
+height: 96px;
+margin-bottom: 0px;
+}
+
+.header--opaque #header__nav-wrapper {
+border-bottom: 1px solid #dfdfdf;
+height: 66px;
+}
+
+#header__nav-wrapper__models {
+display: inline-block;
+}
+
+#header, #header #header__nav-wrapper i, #header a.button-collapse, #header a.button-collapse i {
+line-height: 60px;
+}
+
+/*#header.header--opaque, #header.header--opaque #header__nav-wrapper i, 
+#header.header--opaque a.button-collapse, #header.header--opaque a.button-collapse i {
+line-height: 40px;
+}*/
+
+#header a, #header__nav-wrapper__models span {
+font-weight: 700;
+text-transform: uppercase;
+font-size: 12px;
+transition: color .20s ease-in-out;
+}
+
+#header .tabs .tab a {
+font-size: 14px;
+text-transform: none;
+}
+
+#header__nav-wrapper__models span {
+display: block;
+padding: 0 15px;
+cursor: pointer;
+}
+
+.header--transparent a {
+color: #fff;
+}
+
+#header a:hover, #header__nav-wrapper__models span:hover {
+color: #ddd;
+/*color: #5FB000;*/
+/*background-color: #fff;*/
+}
+
+i.left {
+margin-right: 5px;
+}
+
+.flag-icon {
+margin-right: 5px;
+height: 60px;
+line-height: 60px;
+font-size: 20px;
+float: left;
+}
+
+/*.header--opaque .flag-icon {
+height: 40px;
+line-height: 40px;
+}*/
+
+/*.header--opaque {
+background-color: #fff;
+color: #333;
+padding: 22px 0;
+}
+
+.header--opaque a {
+color: #333;
+}*/
+
+#header.header--opaque {
+background-color: #fff;
+height: 65px;
+}
+
+.header--scrolled {
+padding: 10px 0;
+background-color: white;
+border-bottom: solid 1px #ccc;
+}
+
+.header--transparent {
+background-color: transparent;
+color: #fff;
+padding: 10px 20px;
+}
+
+/*.header--opaque {
+background-color: #333;
+color: #fff;
+padding: 10px 20px;
+}*/
+
+.header--transparent .container, .header--opaque .container {
+max-width: 100%;
+}
+
+#header__logo {
+display: flex;
+font-size: 20pt;
+line-height: 20pt;
+color: white;
+cursor: pointer;
+}
+
+.header--scrolled .header__logo {
+color: #282A2C;
+}
+
+#header__menu {
+display: flex;
+align-items: center;
+font-size: 11px;
+font-weight: 700;
+font-family: 'Lato', sans-serif;
+letter-spacing: 2px;
+text-transform: uppercase;
+}
+
+#header__menu a {
+color: rgb(0, 0, 0);
+text-decoration: none;
+padding: 10px 15px;
+}
+
+.header--scrolled .header__menu a {
+color: #282A2C;
+}
+
+#header__menu a:hover {
+color: #ffffff73;
+}
+
+.header--scrolled .header__menu a:hover {
+color: #2a80b9;
+}
+
+.header--inverted {
+background-color: #282A2C;
+}
+
+#mobile-nav {
+/* move on top of the header */
+z-index: 1003; 
+}
+
+#header ul a:hover {
+background-color: transparent;
+}
+
+.brand-logo img {
+width: 100px;
+}

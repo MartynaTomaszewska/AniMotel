@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100');
+
+@font-face { font-family: "Lato"; src: url("./assets/fonts/lato/Lato-Regular.ttf"); }
+@font-face { font-family: "Lato-Bold"; src: url("./assets/fonts/lato/Lato-Bold.ttf"); }
+@font-face { font-family: "Lato-Black"; src: url("./assets/fonts/lato/Lato-Black.ttf"); }
+@font-face { font-family: "Roboto-Bold"; src: url("./assets/fonts/roboto/Roboto-Black.ttf"); }
+@font-face { font-family: "Roboto-Thin"; src: url("./assets/fonts/roboto/Roboto-Thin.ttf"); }
+
+html * {
+    font-family: 'Lato', 'Open Sans', sans-serif;
+}
