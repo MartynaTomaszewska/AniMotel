@@ -1,13 +1,13 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
 # compiled output
-/dist
-/dist-server
-/tmp
-/out-tsc
+/frontend/animotel/dist
+/frontend/animotel/dist-server
+/frontend/animotel/tmp
+/frontend/animotel/out-tsc
 
 # dependencies
-/node_modules
+/frontend/animotel/node_modules
 
 # IDEs and editors
 /.idea
@@ -26,17 +26,17 @@
 !.vscode/extensions.json
 
 # misc
-/.sass-cache
-/connect.lock
-/coverage
-/libpeerconnection.log
+/frontend/animotel/.sass-cache
+/frontend/animotel/connect.lock
+/frontend/animotel/coverage
+/frontend/animotel/libpeerconnection.log
 npm-debug.log
 testem.log
-/typings
+/frontend/animotel/typings
 
 # e2e
-/e2e/*.js
-/e2e/*.map
+/frontend/animotel/e2e/*.js
+/frontend/animotel/e2e/*.map
 
 # System Files
 .DS_Store
