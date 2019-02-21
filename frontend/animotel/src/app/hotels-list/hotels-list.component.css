@@ -1,0 +1,49 @@
+.hotels-list-wrapper {
+  background-color: #eeeeee;
+  width: 100%;
+  height: 100%;
+}
+.hero-img {
+  margin-top: 65px;
+  height: 450px;
+  background-image: url("assets/img/dog3.jpg");
+  background-size: cover;
+  background-position-y: 730px;
+}
+
+.location-filter {
+  /*background-color: #2677a4;*/
+  height: 82px;
+  margin-top: 30px;
+}
+
+/*.select-wrapper input.select-dropdown {
+  border-bottom: 1px solid #fff;
+  color: white;
+}
+
+.select-wrapper .caret {
+  fill: #fff;
+}
+*/
+
+.search-button {
+  background-color: #2677a4;
+  color: white;
+  box-shadow: none;
+}
+
+.search-button-wrapper {
+  text-align: right;
+}
+
+.results-count {
+  background-color: #fff;
+  height: 60px;
+  margin-top: 10px;
+
+}
+
+.results-count span {
+  line-height: 60px;
+}

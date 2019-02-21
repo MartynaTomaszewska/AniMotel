@@ -1,0 +1,76 @@
+.hotels-list-item {
+  background-color: #fff;
+  height: 235px;
+  margin-top: 10px;
+  padding: 0 0;
+}
+
+.hotels-list-item__img {
+  height: 100%;
+  background-image: url("assets/img/hotels/hotel1.jpeg");
+  background-size: cover;
+
+}
+
+.hotels-list-item__content {
+  height: 100%;
+  padding: 20px;
+}
+
+.hotel-name {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: 'Roboto';
+  letter-spacing: 1px;
+  color: #6c6c6c;
+}
+
+.icons {
+  margin-top: 20px;
+}
+
+.icons svg {
+  font-size: 25px;
+  margin-right: 15px;
+  color: #2677a4;
+}
+
+.pros ul, .information ul {
+  margin-top: 25px;
+}
+
+.pros li, .information li {
+  margin-bottom: 10px;
+}
+
+.pros svg, .information svg {
+  margin-right: 10px;
+  color: #2677a4;
+}
+
+p.rental_price {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 30px;
+  font-weight: 900;
+  color: #2677a4;
+}
+
+p.price-text {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.go-to-offer-button-wrapper {
+  text-align: right;
+}
+
+.go-to-offer-button {
+  margin-top: 15px;
+  background-color: #2677a4;
+  color: white;
+  box-shadow: none;
+}
+
+

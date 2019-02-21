@@ -1,0 +1,82 @@
+.footer {
+
+}
+
+.newsletter {
+  background-color: #2677a4;
+  height: 110px;
+}
+
+.newsletter .container {
+  height: 110px;
+}
+
+.newsletter .text h1 {
+  margin-top: 25px;
+  margin-bottom: 10px;
+  font-size: 25px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: white;
+}
+
+.newsletter .text span {
+  font-style: italic;
+  font-family: 'Roboto-Thin';
+  color: white;
+}
+
+.newsletter .email input {
+  color: white;
+  border-bottom: 2px solid white;
+  box-shadow: none;
+}
+
+.newsletter .email label {
+  color: white;
+}
+
+.newsletter .email {
+  height: 100%;
+}
+
+.save-newsletter-button-wrapper {
+  text-align: left;
+}
+.save-newsletter-button {
+  margin-top: 15px;
+  border: 2px solid white;
+  background-color: #2677a4;
+  color: white;
+  box-shadow: none;
+  font-weight: 900;
+  font-size: 13px;
+}
+
+.content {
+  height: 110px;
+  background-color: white;
+}
+
+.content h1 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.content .container {
+  height: 100%;
+}
+
+.about-us span {
+ 
+}
+
+.social-buttons {
+  height: 100%;
+}
+
+.social-buttons svg {
+  font-size: 25px;
+  margin-right: 15px;
+  color: #2677a4;
+}

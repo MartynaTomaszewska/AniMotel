@@ -1,7 +1,7 @@
 <nav id="header" [ngClass]="headerClasses()">
   <div id="header__nav-wrapper" class="row">
     <div class="col s4 left">
-      <a href="" ng-click="navigateToLanding()" class="brand-logo">
+      <a href="" ng-click="navigateToLanding()" [ngClass]="logoClasses()">
         <img [src]="logoImg()" />
       </a>
     </div>

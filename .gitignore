@@ -41,3 +41,11 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+
+# Django
+*.pyc
+*~
+__pycache__
+myvenv_animotel
+db.sqlite3
+/backend/static

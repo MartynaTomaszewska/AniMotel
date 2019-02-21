@@ -1,0 +1,55 @@
+<div class="hotels-list-wrapper">
+  <div class="hero-img"></div>
+  <div class="container">
+    <div class="row">
+      <div class="location-filter">
+        <div class="input-field col s3">
+          <select #locationSelect>
+            <option value="" disabled selected>Lokalizacja</option>
+            <option value="1">Option 1</option>
+            <option value="2">Option 2</option>
+            <option value="3">Option 3</option>
+          </select>
+        </div>
+        <div class="input-field col s3">
+          <select #animalsSelect>
+            <option value="" disabled selected>Typ zwierzęcia</option>
+            <option value="1">Psy</option>
+            <option value="2">Koty</option>
+            <option value="3">Konie</option>
+            <option value="3">Ptaki</option>
+            <option value="3">Egzotyczne</option>
+          </select>
+        </div>
+        <div class="input-field col s2">
+          <input #startDateInput type="text" class="datepicker" value="Początek pobytu">
+        </div>
+        <div class="input-field col s2">
+          <input #endDateInput type="text" class="datepicker" value="Koniec pobytu">
+        </div>
+        <div class="input-field search-button-wrapper col s2">
+          <button class="btn waves-effect waves-light search-button">Szukaj
+            <i class="material-icons right">send</i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="results-count col s12">
+        <span>Znaleziono 30 wyników</span>
+      </div>
+    </div>
+    <div class="row">
+      <app-hotel-list-item></app-hotel-list-item>
+    </div>
+    <div class="row">
+      <app-hotel-list-item></app-hotel-list-item>
+    </div>
+    <div class="row">
+      <app-hotel-list-item></app-hotel-list-item>
+    </div>
+    <div class="row">
+      <app-hotel-list-item></app-hotel-list-item>
+    </div>
+  </div>
+</div>

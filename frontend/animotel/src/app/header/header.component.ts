@@ -40,8 +40,15 @@ export class HeaderComponent implements OnInit, AfterViewInit {
 
   headerClasses() {
     return {
-      'header--scrolled': this.isScrolled,
-      'header--transparent': true
+      'header--transparent': this.onLandingPage(),
+      'header--opaque' : !this.onLandingPage()
+    };
+  }
+
+  logoClasses() {
+    return {
+      'brand-logo': true,
+      'brand-logo--mini' : !this.onLandingPage()
     };
   }
 
@@ -64,8 +71,6 @@ export class HeaderComponent implements OnInit, AfterViewInit {
   getModelsNames() {
   
   }
-
- 
 
   private onLandingPage() {
     return this.router.isActive('/', true);

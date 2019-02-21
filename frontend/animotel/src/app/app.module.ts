@@ -6,13 +6,19 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LandingComponent } from './landing/landing.component';
 import { HeaderComponent } from './header/header.component';
+import { HotelsListComponent } from './hotels-list/hotels-list.component';
+import { HotelListItemComponent } from './hotel-list-item/hotel-list-item.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     LandingComponent,
-    HeaderComponent
+    HeaderComponent,
+    HotelsListComponent,
+    HotelListItemComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
