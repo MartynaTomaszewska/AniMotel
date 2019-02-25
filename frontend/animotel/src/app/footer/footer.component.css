@@ -1,5 +1,9 @@
 .footer {
+  margin-top: 100px;
+}
 
+.footer.row {
+  margin-bottom: 0px;
 }
 
 .newsletter {
@@ -54,7 +58,7 @@
 }
 
 .content {
-  height: 110px;
+  height: 135px;
   background-color: white;
 }
 

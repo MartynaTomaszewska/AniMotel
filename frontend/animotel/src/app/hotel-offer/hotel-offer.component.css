@@ -1,0 +1,19 @@
+.hotel-offer-wrapper .container {
+  position: relative;
+}
+
+.offer {
+  position: absolute;
+  top: -80px;
+  background-color: white;
+}
+
+.offer-img {
+  margin-top: 65px;
+  height: 450px;
+  width: 100%;
+  object-fit: cover;
+}
+
+
+

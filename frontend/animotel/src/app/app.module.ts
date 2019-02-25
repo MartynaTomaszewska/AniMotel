@@ -9,6 +9,7 @@ import { HeaderComponent } from './header/header.component';
 import { HotelsListComponent } from './hotels-list/hotels-list.component';
 import { HotelListItemComponent } from './hotel-list-item/hotel-list-item.component';
 import { FooterComponent } from './footer/footer.component';
+import { HotelOfferComponent } from './hotel-offer/hotel-offer.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { FooterComponent } from './footer/footer.component';
     HeaderComponent,
     HotelsListComponent,
     HotelListItemComponent,
-    FooterComponent
+    FooterComponent,
+    HotelOfferComponent
   ],
   imports: [
     BrowserModule,
