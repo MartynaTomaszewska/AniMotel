@@ -8,14 +8,12 @@ import * as M from 'materialize-css';
 })
 export class HotelOfferComponent implements OnInit {
 
-  @ViewChild('imgBoxed') imgBoxed: ElementRef;
-
   constructor() { }
 
   ngOnInit() {
 
-    let instance = M.Materialbox.init(this.imgBoxed.nativeElement, { });
-    instance.originalHeight = 2000;
-    instance.originalWidth = 2000;
+    var elems = document.querySelectorAll('.materialboxed');
+    var instances = M.Materialbox.init(elems, { });
+
   }
 }
