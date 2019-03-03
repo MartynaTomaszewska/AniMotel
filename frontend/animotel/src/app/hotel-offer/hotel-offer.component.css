@@ -183,3 +183,21 @@
   display: flex;
 }
 
+#rent-confirmation-modal {
+  width: 40%;
+ 
+}
+
+.modal-footer a {
+  color: #2677a4;
+  font-weight: 900;
+  font-size: 17px;
+}
+
+.map {
+  position: relative;
+  height: 300px;
+  width: 100%;
+  top: -55px;
+}
+

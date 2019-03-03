@@ -10,6 +10,8 @@ import { HotelsListComponent } from './hotels-list/hotels-list.component';
 import { HotelListItemComponent } from './hotel-list-item/hotel-list-item.component';
 import { FooterComponent } from './footer/footer.component';
 import { HotelOfferComponent } from './hotel-offer/hotel-offer.component';
+import { NgxGalleryModule } from 'ngx-gallery';
+import { RentConfirmationComponent } from './rent-confirmation/rent-confirmation.component';
 
 
 @NgModule({
@@ -20,11 +22,13 @@ import { HotelOfferComponent } from './hotel-offer/hotel-offer.component';
     HotelsListComponent,
     HotelListItemComponent,
     FooterComponent,
-    HotelOfferComponent
+    HotelOfferComponent,
+    RentConfirmationComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule 
+    AppRoutingModule,
+    NgxGalleryModule
   ],
   providers: [],
   bootstrap: [AppComponent]

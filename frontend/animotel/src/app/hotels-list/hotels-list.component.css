@@ -6,7 +6,7 @@
 .hero-img {
   margin-top: 65px;
   height: 450px;
-  background-image: url("assets/img/dog3.jpg");
+  background-image: url("assets/img/animals/dog3.jpg");
   background-size: cover;
   background-position-y: 730px;
 }
