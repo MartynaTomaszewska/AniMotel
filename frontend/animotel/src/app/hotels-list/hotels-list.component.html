@@ -36,20 +36,11 @@
     </div>
     <div class="row">
       <div class="results-count col s12">
-        <span>Znaleziono 30 wyników</span>
+        <span>Znaleziono {{ hotelOffers.length }} wyników</span>
       </div>
     </div>
-    <div class="row">
-      <app-hotel-list-item></app-hotel-list-item>
-    </div>
-    <div class="row">
-      <app-hotel-list-item></app-hotel-list-item>
-    </div>
-    <div class="row">
-      <app-hotel-list-item></app-hotel-list-item>
-    </div>
-    <div class="row">
-      <app-hotel-list-item></app-hotel-list-item>
+    <div *ngFor="let offer of hotelOffers" class="row">
+      <app-hotel-list-item [offer]="offer"></app-hotel-list-item>
     </div>
   </div>
 </div>

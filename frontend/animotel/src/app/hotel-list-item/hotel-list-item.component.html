@@ -1,13 +1,9 @@
 <div class="hotels-list-item col s12">
   <div class="hotels-list-item__img col s3"></div>
   <div class="hotels-list-item__content col s9">
-    <span class="hotel-name">Hotel dla zwierząt</span>
+    <span class="hotel-name">{{offer.name}}</span>
     <div class="icons">
-      <i class="fas fa-dog"></i>
-      <i class="fas fa-cat"></i>
-      <i class="fas fa-horse"></i>
-      <i class="fas fa-dove"></i>
-      <i class="fas fa-frog"></i>
+      <i *ngFor="let animal of offer.accepted_animals" [class]="AnimalToIcon[animal]"></i>
     </div>
     <div claa="row">
       <div class="pros col s5">

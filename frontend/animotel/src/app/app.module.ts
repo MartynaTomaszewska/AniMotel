@@ -12,6 +12,7 @@ import { FooterComponent } from './footer/footer.component';
 import { HotelOfferComponent } from './hotel-offer/hotel-offer.component';
 import { NgxGalleryModule } from 'ngx-gallery';
 import { RentConfirmationComponent } from './rent-confirmation/rent-confirmation.component';
+import { HttpClientModule } from '@angular/common/http'; 
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { RentConfirmationComponent } from './rent-confirmation/rent-confirmation
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgxGalleryModule
+    NgxGalleryModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
