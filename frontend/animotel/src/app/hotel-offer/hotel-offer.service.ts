@@ -33,11 +33,11 @@ export interface HotelOfferImg {
 }
 
 export const AnimalToIcon = {
-  [Animal.Dog]: 'fas fa-dog',
-  [Animal.Cat]: 'fas fa-cat',
-  [Animal.Horse]: 'fas fa-horse',
-  [Animal.Bird]: 'fas fa-dove',
-  [Animal.Reptile]: 'fas fa-frog',
+  dog: 'fas fa-dog',
+  cat: 'fas fa-cat',
+  horse: 'fas fa-horse',
+  bird: 'fas fa-dove',
+  reptile: 'fas fa-frog',
 }
 
 @Injectable({

@@ -84,3 +84,41 @@
   margin-right: 15px;
   color: #2677a4;
 }
+
+.social-buttons svg.last {
+  margin-right: 0px;
+}
+
+@media (max-width: 992px) {
+
+  .newsletter {
+    height: 200px;
+  }
+
+  .social-buttons {
+    display: flex;
+    justify-content: center;
+  }
+
+  .content {
+    height: auto;
+    padding: 25px 0px;
+  }
+
+  .content a {
+    text-align: center;
+    display: block;
+    padding-top: 50px;
+  }
+
+  .footer {
+    margin-top: 0px;
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  
+
+}

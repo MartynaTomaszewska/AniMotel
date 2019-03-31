@@ -9,7 +9,7 @@
   height: 100%;
   background-image: url("assets/img/hotels/hotel1.jpeg");
   background-size: cover;
-
+  background-position: center;
 }
 
 .hotels-list-item__content {
@@ -73,3 +73,33 @@ p.price-text {
   box-shadow: none;
 }
 
+@media (max-width: 992px) {
+
+  .hotels-list-item__img {
+    height: 250px;
+  }
+
+  .hotels-list-item {
+    height: auto;
+  }
+
+  .go-to-offer-button {
+    width: 100%;
+  }
+
+  .go-to-offer-button-wrapper {
+    padding: 0px;
+  }
+
+  .rental-price-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  p.price-text {
+    align-self: flex-end;
+    margin-bottom: 5px;
+    margin-left: 10px;
+  }
+}

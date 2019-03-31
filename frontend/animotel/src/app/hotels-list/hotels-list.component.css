@@ -47,3 +47,41 @@
 .results-count span {
   line-height: 60px;
 }
+
+/*@media (max-width: 1199px) and (min-width: 992px) {*/
+
+/*@media (max-width: 350px) {
+
+  .hero-img {
+    height: 150px;
+    background-position-y: 170px;
+  }
+
+}
+
+@media (min-width: 351px) and (max-width: 600px) {
+
+  .hero-img {
+    height: 250px;
+    background-size: cover;
+    background-position-y: 730px;
+  }
+
+}*/
+
+
+@media (max-width: 992px) {
+
+  .hero-img {
+    display: none;
+  }
+
+  .hotels-list-wrapper {
+    padding-top: 60px;
+  }
+
+  .search-button {
+    width: 100%;
+  }
+
+}

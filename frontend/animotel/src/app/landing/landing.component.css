@@ -130,3 +130,36 @@
   background-color: #fbfbfb;
 }
 
+@media (max-width: 600px) {
+
+  .landing__content {
+    margin: 0 auto 0;
+    padding: 0px 10px;
+  }
+
+  .landing__content > h2 {
+    font-size: 30px;
+  }
+
+  .landing__content > p {
+    font-size: 17px;
+  }
+
+  .landing__buttons {
+    flex-direction: column;
+  }
+
+  .landing__buttons > * {
+    margin: 10px 20px;
+  }
+
+}
+
+@media (max-width: 340px) {
+  .landing__content > h2 {
+    font-size: 25px;
+  }
+}
+
+
+

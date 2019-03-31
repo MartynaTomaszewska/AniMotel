@@ -201,3 +201,37 @@
   top: -55px;
 }
 
+@media (max-width: 992px) {
+  
+  .pro {
+    display: block;
+    width: fit-content;
+  }
+
+  .pros {
+    top: 0px;
+    transform: translateY(-100%);
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .summary-wrapper {
+    position: unset;
+    top: 0px;
+    margin-top: 30px;
+  }
+
+  .offer {
+    padding: 30px 10px;
+  }
+
+  .map { 
+    top: -80px;
+  }
+}
+
+@media (max-width: 600px) {
+  
+}

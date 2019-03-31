@@ -1,27 +1,29 @@
 <div class="hotels-list-item col s12">
-  <div class="hotels-list-item__img col s3"></div>
-  <div class="hotels-list-item__content col s9">
+  <div class="hotels-list-item__img col s12 l3"></div>
+  <div class="hotels-list-item__content col s12 l9">
     <span class="hotel-name">{{offer.name}}</span>
     <div class="icons">
       <i *ngFor="let animal of offer.accepted_animals" [class]="AnimalToIcon[animal]"></i>
     </div>
     <div claa="row">
-      <div class="pros col s5">
+      <div class="pros col s6 l5">
         <ul>
           <li><i class="fas fa-check"></i>blisko miasta</li>
           <li><i class="fas fa-check"></i>z dala od miasta</li>
           <li><i class="fas fa-check"></i>w centrum miasta</li>
         </ul>
       </div>
-      <div class="information col s3">
+      <div class="information col s6 l3">
         <ul>
           <li><i class="far fa-calendar-alt"></i>czas pobytu</li>
           <li><i class="fas fa-map-marker-alt"></i>lokalizacja</li>
         </ul>
       </div>
-      <div class="go-to-offer-button-wrapper col s4">
-        <p class="rental_price">250 PLN</p>
-        <p class="price-text">cena za dzień</p>
+      <div class="go-to-offer-button-wrapper col s12 l4">
+        <div class="rental-price-wrapper">
+          <p class="rental_price">250 PLN</p>
+          <p class="price-text">cena za dzień</p>
+        </div>
         <button routerLink="/hotel-offer" class="btn waves-effect waves-light go-to-offer-button">Przejdź do oferty
           <i class="material-icons right">send</i>
         </button>

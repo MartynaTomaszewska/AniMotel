@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { HotelOffer } from '../hotel-offer/hotel-offer.service';
+import { HotelOffer, AnimalToIcon } from '../hotel-offer/hotel-offer.service';
 
 
 @Component({
@@ -8,6 +8,8 @@ import { HotelOffer } from '../hotel-offer/hotel-offer.service';
   styleUrls: ['./hotel-list-item.component.css']
 })
 export class HotelListItemComponent implements OnInit {
+
+  AnimalToIcon = AnimalToIcon;
 
   @Input('offer') offer: HotelOffer;
 
