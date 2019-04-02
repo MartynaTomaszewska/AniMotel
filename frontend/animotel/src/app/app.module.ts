@@ -11,6 +11,7 @@ import { HotelListItemComponent } from './hotel-list-item/hotel-list-item.compon
 import { FooterComponent } from './footer/footer.component';
 import { HotelOfferComponent } from './hotel-offer/hotel-offer.component';
 import { NgxGalleryModule } from 'ngx-gallery';
+import { NgxPayPalModule } from 'ngx-paypal';
 import { RentConfirmationComponent } from './rent-confirmation/rent-confirmation.component';
 import { HttpClientModule } from '@angular/common/http'; 
 
@@ -30,7 +31,8 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserModule,
     AppRoutingModule,
     NgxGalleryModule,
-    HttpClientModule
+    HttpClientModule,
+    NgxPayPalModule
   ],
   providers: [],
   bootstrap: [AppComponent]

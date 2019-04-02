@@ -18,7 +18,7 @@ export interface HotelOffer {
   description: string;
   adv_type: string;
   accepted_animals: Animal[];
-  pros: number[];
+  pros: string[];
   price_per_day: number;
   phone: string;
   city: string;
@@ -38,6 +38,12 @@ export const AnimalToIcon = {
   horse: 'fas fa-horse',
   bird: 'fas fa-dove',
   reptile: 'fas fa-frog',
+}
+
+export const ProToStr = {
+  '1': 'blisko miasta',
+  '2': 'z dala od miasta',
+  '3': 'w centrum miasta',
 }
 
 @Injectable({

@@ -185,7 +185,6 @@
 
 #rent-confirmation-modal {
   width: 40%;
- 
 }
 
 .modal-footer a {
@@ -230,8 +229,14 @@
   .map { 
     top: -80px;
   }
+
+  #rent-confirmation-modal {
+    width: 70%;
+  }
 }
 
 @media (max-width: 600px) {
-  
+  #rent-confirmation-modal {
+    width: 100%;
+  }
 }

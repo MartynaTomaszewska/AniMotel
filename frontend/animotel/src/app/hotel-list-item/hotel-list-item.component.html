@@ -8,9 +8,7 @@
     <div claa="row">
       <div class="pros col s6 l5">
         <ul>
-          <li><i class="fas fa-check"></i>blisko miasta</li>
-          <li><i class="fas fa-check"></i>z dala od miasta</li>
-          <li><i class="fas fa-check"></i>w centrum miasta</li>
+          <li *ngFor="let pro of offer.pros"><i class="fas fa-check"></i>{{ProToStr[pro]}}</li>
         </ul>
       </div>
       <div class="information col s6 l3">

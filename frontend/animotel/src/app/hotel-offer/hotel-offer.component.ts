@@ -1,6 +1,8 @@
-import { Component, OnInit, ElementRef, ViewChild } from '@angular/core';
+import { Component, OnInit, AfterViewInit, ElementRef, ViewChild } from '@angular/core';
 import { NgxGalleryOptions, NgxGalleryImage, NgxGalleryAnimation } from 'ngx-gallery';
 import * as M from 'materialize-css';
+
+declare let paypal: any;
 
 @Component({
   selector: 'app-hotel-offer',

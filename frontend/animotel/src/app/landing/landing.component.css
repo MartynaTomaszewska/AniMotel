@@ -13,6 +13,12 @@
   z-index: -1;
 }
 
+.landing__image {
+  background-image: url("assets/img/animals/cat.jpg");
+  background-size: cover;
+  background-position-x: -360px;
+}
+
 .landing__content {
   margin: -250px auto 0;
   text-align: center;
