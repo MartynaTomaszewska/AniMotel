@@ -1,5 +1,5 @@
 <div class="hotels-list-item col s12">
-  <div class="hotels-list-item__img col s12 l3"></div>
+  <div class="hotels-list-item__img col s12 l3" [style.background-image]="'url(' + apiUrl + offer.images[0].image + ')'"></div>
   <div class="hotels-list-item__content col s12 l9">
     <span class="hotel-name">{{offer.name}}</span>
     <div class="icons">
@@ -8,7 +8,7 @@
     <div claa="row">
       <div class="pros col s6 l5">
         <ul>
-          <li *ngFor="let pro of offer.pros"><i class="fas fa-check"></i>{{ProToStr[pro]}}</li>
+          <li *ngFor="let pro of offer.pros"><i class="fas fa-check"></i>{{ ProToStr[pro] }}</li>
         </ul>
       </div>
       <div class="information col s6 l3">
@@ -19,10 +19,10 @@
       </div>
       <div class="go-to-offer-button-wrapper col s12 l4">
         <div class="rental-price-wrapper">
-          <p class="rental_price">250 PLN</p>
+          <p class="rental_price">{{ offer.price_per_day }} PLN</p>
           <p class="price-text">cena za dzień</p>
         </div>
-        <button routerLink="/hotel-offer" class="btn waves-effect waves-light go-to-offer-button">Przejdź do oferty
+        <button [routerLink]="['/hotel-offer', offer.id]" class="btn waves-effect waves-light go-to-offer-button">Przejdź do oferty
           <i class="material-icons right">send</i>
         </button>
       </div>

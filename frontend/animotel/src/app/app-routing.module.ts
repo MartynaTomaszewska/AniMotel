@@ -8,7 +8,7 @@ import { HotelOfferComponent } from './hotel-offer/hotel-offer.component';
 const routes: Routes = [
   { path: '', component: LandingComponent },
   { path: 'hotels', component: HotelsListComponent },
-  { path: 'hotel-offer', component: HotelOfferComponent },
+  { path: 'hotel-offer/:id', component: HotelOfferComponent },
 ];
 
 @NgModule({

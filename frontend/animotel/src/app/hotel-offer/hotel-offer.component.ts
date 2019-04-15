@@ -1,6 +1,9 @@
-import { Component, OnInit, AfterViewInit, ElementRef, ViewChild } from '@angular/core';
+import { Component, OnInit, AfterViewInit, ElementRef, ViewChild, Input } from '@angular/core';
 import { NgxGalleryOptions, NgxGalleryImage, NgxGalleryAnimation } from 'ngx-gallery';
 import * as M from 'materialize-css';
+import { HotelOffer, HotelOfferService } from './hotel-offer.service';
+import { ActivatedRoute } from '@angular/router';
+import { environment } from '../../environments/environment';
 
 declare let paypal: any;
 
@@ -11,18 +14,30 @@ declare let paypal: any;
 })
 export class HotelOfferComponent implements OnInit {
 
+  hotelOffer: HotelOffer;
+
+  apiUrl = environment.apiUrl;
+
   galleryOptions: NgxGalleryOptions[];
   galleryImages: NgxGalleryImage[];
 
-  constructor() { }
+  constructor(private route: ActivatedRoute, private hotelOfferService: HotelOfferService) { }
 
   ngOnInit() {
 
-    var materialboxElems = document.querySelectorAll('.materialboxed');
-    var materialboxInstances = M.Materialbox.init(materialboxElems, {});
+    this.route.params.subscribe(params => {
+      let offerId = +params['id'];
+      
+      this.hotelOfferService.getHotelOfferById(offerId).subscribe(offer => {
+        this.hotelOffer = offer;
+      });
+    });
 
-    var modalElems = document.querySelectorAll('.modal');
-    var modalInstances = M.Modal.init(modalElems, {});
+    let materialboxElems = document.querySelectorAll('.materialboxed');
+    let materialboxInstances = M.Materialbox.init(materialboxElems, {});
+
+    let modalElems = document.querySelectorAll('.modal');
+    let modalInstances = M.Modal.init(modalElems, {});
 
     this.galleryOptions = [
       { "image": false, "thumbnailsRemainingCount": true, "height": "100px" },
@@ -44,5 +59,9 @@ export class HotelOfferComponent implements OnInit {
       }
     ];
 
+  }
+
+  getOfferImages() {
+    
   }
 }

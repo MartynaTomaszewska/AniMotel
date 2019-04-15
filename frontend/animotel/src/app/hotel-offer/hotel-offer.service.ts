@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { NumericDictionary } from 'lodash';
 import { HttpClient } from '@angular/common/http';
 import { Observable, of, EMPTY } from 'rxjs';
-import {flatMap, catchError} from 'rxjs/operators';
+import { flatMap, catchError } from 'rxjs/operators';
 
 enum Animal {
   Dog,
@@ -74,7 +74,20 @@ export class HotelOfferService {
         })
       );
     }
+  }
 
+  getHotelOfferById(id: number): Observable<HotelOffer> {
+
+    return this.getHotelOffers().pipe(flatMap(offers => {
+      let foundOffer;
+      for (let offer of offers) {
+        if (offer.id == id) {
+          foundOffer = offer;
+          break;
+        }
+      }
+      return foundOffer;
+    }));
   }
 
 }
